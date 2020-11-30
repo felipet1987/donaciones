@@ -18,6 +18,15 @@ class GrupoFamiliar:
         }
 
     def totalPersonas(self):
-        sum = 0
+        adultos_masculinos = self.table.df['adultosMasculinos'].sum().item()
+        adultos_femeninos = self.table.df['adultosFemeninos'].sum().item()
+        ninos_masculinos = self.table.df['ninosMasculinos'].sum().item()
+        ninos_femeninos = self.table.df['ninosFemeninos'].sum().item()
+        adultos_mayores = self.table.df['adultosMayores'].sum().item()
+        sum = adultos_masculinos + \
+              adultos_femeninos + \
+              ninos_masculinos + \
+              ninos_femeninos + \
+              adultos_mayores
         return sum
 

@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine, inspect
 import pandas as pd
 
-db_url = 'mysql+mysqlconnector://clrsap_reporte:8kGWG!@tUmBoM&@rsap.cl:3306/clrsap_rsapcl_rsap'
+##db_url = 'mysql+mysqlconnector://clrsap_reporte:8kGWG!@tUmBoM&@rsap.cl:3306/clrsap_rsapcl_rsap'
+db_url = 'mysql+mysqlconnector://rsapcl_remote:aePyPNMLQwBjv9@rsap.cl:3306/rsapcl_rsap'
 
 
 class Database:
