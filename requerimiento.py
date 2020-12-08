@@ -11,13 +11,13 @@ class Requerimiento:
 
     def levantados(self):
         return {
-            "panales": len(self.df_lista.query('panales_req == "Si"').index),
-            "comida": len(self.df_lista.query('comida_req == "Si"').index),
-            "lena": len(self.df_lista.query('lena_req == "Si"').index),
-            "leche": len(self.df_lista.query('leche_req == "Si"').index),
-            "agua": len(self.df_lista.query('agua_req == "Si"').index),
-            "ropa de Cama": len(self.df_lista.query('ropaCama == "Si"').index),
-            "aseo Personal": len(self.df_lista.query('aseoPersonal == "Si"').index),
-            "articulos de Aseo ": len(self.df_lista.query('artLimpieza == "Si"').index),
-            "canasta familiar ": len(self.df_lista.query('canastaFamiliar == "Si"').index),
+                   1: {"name": "Pañales", "qty": len(self.df_lista.query('panales_req == "Si"').index)},
+                   2: {"name": "Comida", "qty": len(self.df_lista.query('comida_req == "Si"').index)},
+                   3: {"name": "Leña", "qty": len(self.df_lista.query('lena_req == "Si"').index)},
+                   4: {"name": "Leche", "qty": len(self.df_lista.query('leche_req == "Si"').index)},
+                   5: {"name": "Agua", "qty": len(self.df_lista.query('agua_req == "Si"').index)},
+                   6: {"name": "Ropa de cama", "qty": len(self.df_lista.query('ropaCama == "Si"').index)},
+                   7: {"name": "Aseo personal", "qty": len(self.df_lista.query('aseoPersonal == "Si"').index)},
+                   8: {"name": "Articulos de limpieza", "qty": len(self.df_lista.query('artLimpieza == "Si"').index)},
+                   9: {"name": "Canasta familiar", "qty": len(self.df_lista.query('canastaFamiliar == "Si"').index)}
         }
