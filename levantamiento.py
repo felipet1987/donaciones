@@ -10,6 +10,6 @@ class Levantamiento:
 
     def totales(self):
             return {
-                "puntosLevantados": self.punto.count(),
-                "personasLevantadas": self.familiar.totalPersonas(),
+                "totalPuntos": self.punto.count(),
+                "totalPersonas": self.familiar.totalPersonas(),
             }
